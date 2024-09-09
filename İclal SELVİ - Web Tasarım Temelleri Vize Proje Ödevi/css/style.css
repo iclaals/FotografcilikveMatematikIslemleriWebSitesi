@@ -1,0 +1,319 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background-color: gray;
+}
+.section-padding {
+    padding: 50px 0;
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0,0.7);
+    z-index: 1;
+}
+.navbar nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;    
+}
+.navbar-light .navbar-brand {
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color:#000;
+}
+.navbar-light .navbar-nav .navbar-link{
+    color: #000;
+}
+.w-100 {
+    height: 100vh;
+}
+#MRS.wolfeanorphotograpy {
+    letter-spacing: 20px;
+}
+.card-body {
+    font-size: 15px;
+}
+.card {
+    box-shadow: 15px 15px 40px rgb(0, 0, 0,0.15);
+}
+#portfolyoresimler{
+    filter:alpha(opacity=50); -moz-opacity: 0.5; opacity: 0.5;
+    
+}
+#portfolyoresimler:hover {
+  filter:alpha(opacity=100); -moz-opacity: 1.0; opacity: 1.0;
+}
+#navbaritemleri:hover {
+    color: red;
+}
+#cardresim {
+    border-radius: 10%;
+}
+#cardresim:hover{
+    cursor: pointer;
+-webkit-transform: scale(1.2, 1.2);
+-ms-transform: scale(1.2, 1.2);
+transform: scale(1.2, 1.2);
+transition-duration: 0.3s;
+-webkit-transition-duration: 0.3s; 
+box-shadow: 10px 10px 5px #888888;
+z-index: 2;
+position:relative;
+}
+#navbaritemleri {
+    color: gray;
+}
+#cardozellik{
+    border-radius: 10px 10px 10px 10px;
+}
+.navbar-toggler {
+    border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+#sosyalmedyalogolarp {
+    word-spacing: 15px;
+}
+#sitelogo {
+    height: 35px;
+    width: 35px;
+}
+#iletisim {
+    margin-top: 20px;
+}
+#websitename {
+    color: white;
+    text-decoration-line: none;
+}
+#websitename:hover{
+    color: red;
+}
+#sosyalmedyadiv {
+    padding-top: 10px;
+}
+#cardetiketi {
+    letter-spacing: 5px;
+    
+}
+.card-text {
+    margin-top: -15px;
+    
+}
+#yeradi{
+    letter-spacing: 10px;
+}
+#fotoğrafçılar {
+    letter-spacing: 20px;
+}
+#site1{
+    border:2px solid red;
+    height: 200px;
+    width: 100%;
+}
+#site2{
+    margin-top: 10px;
+    border:2px solid red;
+    height: 200px;
+    width: 100%;
+}
+#fotografcılar {
+    margin-top: -20px;
+}
+
+
+#index2renk {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+#index2renk:hover #index2renkspan {
+    padding-right: 25px;
+}
+#index2renk :hover #index2renkspan::after{
+    opacity: 1;
+  right: 0;
+}
+
+#renkdegistirmebutonu {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+#index2renkspan::after {
+    content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#butonicerik {
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#butonicerik::after {
+    content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#renkdegistirmebutonu:hover #butonicerik {
+    padding-right: 25px;
+}
+#renkdegistirmebutonu:hover #butonicerik::after{
+    opacity: 1;
+  right: 0;
+}
+.islemsection {
+    max-width: 800px;
+    margin:10px auto;
+    margin-bottom: 10px;
+    position: relative;
+    box-shadow: 0 10px 30px 0px rgb(0, 0, 0,0.1);
+    padding: 30px;
+}
+.islembaslık {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 50px;
+    padding-bottom: 1px;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right,#f4524d 0%,#5543ca 100%);
+}
+.formanadiv .formdiv {
+    position: relative;
+    margin: 32px 0;
+}
+.formanadiv .inputlar {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #5543ca;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.formanadiv .inputlar:focus {
+    outline: none;
+}
+.formanadiv .label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #5543ca;
+    cursor: text;
+    transition: transform 0.2s ease-in-out;
+}
+.formanadiv .submit {
+    display: inline-block;
+    background-image: linear-gradient(125deg,#a72879,#064497);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+}
+.formanadiv .inputlar:focus + .label,
+.formanadiv .inputlar.not-empty + .label {
+    transform: translateY(-24px);
+}
+.submit {
+    border-radius: 10px;
+}
+
+#geometriksekiller {
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-size: 60px;
+}
+#matematikselsekiller {
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-size: 60px;
+}
+.sonucdiv {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#adresmail {
+    Color: #ffffff
+}
+#analogo1 {
+    Color: #e4c518 
+}
+#analogo2 {
+    Color: #060339
+}
+#bosluk {
+    Color: #ffffff
+}

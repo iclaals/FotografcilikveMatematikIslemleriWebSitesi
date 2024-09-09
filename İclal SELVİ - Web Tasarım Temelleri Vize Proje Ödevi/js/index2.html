@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+    <title>Mrs.Wolfeanor Gallery</title>
+    <link rel="shortcut icon" href="../images/logo.png" />
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+
+    <meta name="description" content="Matematiksel İşlemleri Sunduğum Bloğuma Hoşgeldiniz">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+<body>
+
+    <!-- Header Başlangıç -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <img id="sitelogo" src="../images/logo.png"/>
+          &nbsp;&nbsp;
+          <a class="navbar-brand" id="analogo1" href="index2.html"><span class="text-warning"></span>Mrs.Wolfeanor&nbsp;<span id="analogo2" >Maths</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" id="navbaritemleri" href="index.html">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="navbaritemleri" href="#arakisim1">Geometri İşlemleri</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="navbaritemleri" href="#arakisim2">Matematik İşlemleri</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="navbaritemleri" href="#iletisim ">İletişim</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Header Bitiş -->
+
+    <!-- Carousel Başlangıç -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../images/pisagor.jpg" id="hipotenusresim" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5 id="yeradi">Pisagor</h5>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <img src="../images/blaisepascal.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5 id="yeradi">Blaise Pascal</h5>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <img src="../images/alikuscu.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5 id="yeradi">Ali Kuşçu</h5>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Önce</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Sonra</span>
+        </button>
+      </div>
+    <!-- Carousel Bitiş -->
+
+    <!-- Ara Kısım Başlangıç -->
+      <section id="arakisim1" class="section-padding">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="section-header text-center pb-3">
+                            <h2 id="geometriksekiller">Geometrik Şekiller</h2>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    <!-- Ara Kısım Bitiş -->
+
+    
+
+    <!-- Hipotenüs Başlangıç -->
+    <section class="islemsection" id="geometri">
+        <h3 class="islembaslık">HİPOTENÜS</h3>
+      <div class="container" id="islemdiv">
+          <div class="formanadiv row">
+          <div class="formdiv col-lg-6">
+              <input id="dikkenar" class="inputlar" type="text" name="">
+              <label for="dikkenar" class="label">Dik Kenar</label>
+          </div>
+          <div class="formdiv col-lg-6">
+            <input id="uzunkenar" class="inputlar" type="text" name="">
+            <label for="uzunkenar" class="label">Uzun Kenar</label>
+        </div>
+        <div class="formdiv col-lg-4 mx-auto">
+            <input class="submit" id="sonucbutton"type="submit" value="Sonuç" name="">
+        </div>
+        <div class="sonucdiv col-lg-12 mx-auto text-center" id="sonuc"></div>
+    </div>
+      </div>
+    </section>
+    <!-- Hipotenüs Bitiş -->
+
+    <!-- Üçgen Alan Ve Çevre Başlangıç -->
+    <section class="islemsection">
+        <h3 class="islembaslık">Üçgen Alan Ve Çevre</h3>
+      <div class="container" id="islemdiv">
+          <div class="formanadiv row">
+          <div class="formdiv col-lg-6">
+              <input id="yukseklik" class="inputlar" type="text" name="">
+              <label for="yukseklik" class="label">Yükseklik</label>
+          </div>
+          <div class="formdiv col-lg-6">
+            <input id="taban" class="inputlar" type="text" name="">
+            <label for="taban" class="label">Taban</label>
+        </div>
+        <div class="formdiv col-lg-6">
+          <input id="ucgensolkenar" class="inputlar" type="text" name="">
+          <label for="ucgensolkenar" class="label">Sol Kenar</label>
+      </div>
+      <div class="formdiv col-lg-6">
+        <input id="ucgensagkenar" class="inputlar" type="text" name="">
+        <label for="ucgensagkenar" class="label">Sağ Kenar</label>
+    </div>
+        <div class="formdiv col-lg-4 mx-auto">
+            <input id="sonucucgen" class="submit" type="submit" value="Sonuç" name="">
+        </div>
+        <div class="sonucdiv col-lg-12 mx-auto text-center" id="cevap"></div>
+        <div class="sonucdiv col-lg-12 mx-auto text-center" id="cevapcevre"></div>
+    </div>
+      </div>
+    </section>
+    <!-- Üçgen Alanı Ve Çevre Bitiş -->
+
+     <!-- Kare Alan Ve Çevre Başlangıç -->
+     <section class="islemsection">
+        <h3 class="islembaslık">Kare Alan Ve Çevre</h3>
+      <div class="container" id="islemdiv">
+          <div class="formanadiv row">
+          <div class="formdiv col-lg-12">
+              <input id="kenar" class="inputlar" type="text" name="">
+              <label for="kenar" class="label">Kenar</label>
+          </div>
+        <div class="formdiv col-lg-4 mx-auto">
+            <input id="sonuckare" class="submit" type="submit" value="Sonuç" name="">
+        </div>
+        <div class="sonucdiv col-lg-12 mx-auto text-center" id="cevapkare"></div>
+        <div class="sonucdiv col-lg-12 mx-auto text-center" id="cevapkarecevre"></div>
+        <div id="kare"></div>
+
+    </div>
+      </div>
+    </section>
+    <!-- Kare Alan Ve Çevre Bitiş -->
+
+     <!-- Dikdörtgen Alan Ve Çevresi Başlangıç -->
+     <section class="islemsection">
+        <h3 class="islembaslık">Dikdörtgen Alan Ve Çevre</h3>
+      <div class="container" id="islemdiv">
+          <div class="formanadiv row">
+          <div class="formdiv col-lg-6">
+              <input id="dikdörtgenkısakenar" class="inputlar" type="text" name="">
+              <label for="dikdörtgenkısakenar" class="label">Kısa Kenar</label>
+          </div>
+          <div class="formdiv col-lg-6">
+            <input id="dikdörtgenuzunkenar" class="inputlar" type="text" name="">
+            <label for="dikdörtgenuzunkenar" class="label">Uzun Kenar</label>
+        </div>
+        <div class="formdiv col-lg-4 mx-auto">
+            <input id="dikdörtgensonuc"class="submit" type="submit" value="Sonuç" name="">
+        </div>
+        <div class="sonucdiv col-lg-12 mx-auto text-center" id="cevapdikdörtgen"></div>
+        <div class="sonucdiv col-lg-12 mx-auto text-center" id="cevapdikdörtgencevre"></div>
+        <div id="dikdörtgen"></div>
+
+    </div>
+      </div>
+    </section>
+    <!-- Dikdörtgen Alanı Ve Çevresi Bitiş -->
+
+     <!-- Yamuk Alan Ve Çevresi Başlangıç -->
+     <section class="islemsection">
+        <h3 class="islembaslık">Yamuk Alan Ve Çevre</h3>
+      <div class="container"id="islemdiv">
+          <div class="formanadiv row">
+          <div class="formdiv col-lg-6">
+              <input id="yamukalttaban" class="inputlar" type="text" name="">
+              <label for="yamukalttaban" class="label">Alt Taban</label>
+          </div>
+          <div class="formdiv col-lg-6">
+            <input id="yamuküsttaban" class="inputlar" type="text" name="">
+            <label for="yamuküsttaban" class="label">Üst Taban</label>
+        </div>
+        <div class="formdiv col-lg-12">
+            <input id="yamukyükseklik" class="inputlar" type="text" name="">
+            <label for="yamukyükseklik" class="label">Yükseklik</label>
+        </div>
+        <div class="formdiv col-lg-6">
+          <input id="yamuksolkenar" class="inputlar" type="text" name="">
+          <label for="yamuksolkenar" class="label">Sol Kenar</label>
+      </div>
+      <div class="formdiv col-lg-6">
+        <input id="yamuksağkenar" class="inputlar" type="text" name="">
+        <label for="yamuksağkenar" class="label">Sağ Kenar</label>
+    </div>
+        <div class="formdiv col-lg-4 mx-auto">
+            <input id="yamuksonuc" class="submit" type="submit" value="Sonuç" name="">
+        </div>
+        <div class="sonucdiv col-lg-12 mx-auto text-center" id="cevapyamuk"></div>
+        <div class="sonucdiv col-lg-12 mx-auto text-center" id="cevapyamukcevre"></div>
+    </div>
+      </div>
+    </section>
+    <!-- Yamuk Alanı Ve Çevresi Bitiş -->
+
+    <!-- Daire Alan Ve Çevresi Başlangıç -->
+    <section class="islemsection">
+        <h3 class="islembaslık">Daire Alan Ve Çevre</h3>
+      <div class="container"id="islemdiv">
+          <div class="formanadiv row">
+          <div class="formdiv col-lg-6">
+              <input id="daireyarıcap" class="inputlar" type="text" name="">
+              <label for="daireyarıcap" class="label">Yarıçapı</label>
+          </div>
+        <div class="formdiv col-lg-4 mx-auto">
+            <input id="dairesonuc" class="submit" type="submit" value="Sonuç" name="">
+        </div>
+        <div class="sonucdiv col-lg-12 mx-auto text-center" id="cevapdaire"></div>
+        <div class="sonucdiv col-lg-12 mx-auto text-center" id="cevapdairecevre"></div>
+    </div>
+      </div>
+    </section>
+    <!-- Daire Alanı Ve Çevresi Bitiş -->
+
+    <!-- Küre Alan Ve Çevresi Başlangıç -->
+     <section class="islemsection">
+      <h3 class="islembaslık">Küre Alan Ve Çevre</h3>
+    <div class="container"id="islemdiv">
+        <div class="formanadiv row">
+        <div class="formdiv col-lg-6">
+            <input id="küreyarıcap" class="inputlar" type="text" name="">
+            <label for="küreyarıcap" class="label">Yarıçapı</label>
+        </div>
+      <div class="formdiv col-lg-4 mx-auto">
+          <input id="küresonuc" class="submit" type="submit" value="Sonuç" name="">
+      </div>
+      <div class="sonucdiv col-lg-12 mx-auto text-center" id="cevapküre"></div>
+      <div class="sonucdiv col-lg-12 mx-auto text-center" id="cevapkürecevre"></div>
+  </div>
+    </div>
+  </section>
+  <!-- Küre Alanı Ve Çevresi Bitiş -->
+
+    <!-- Ara Kısım2 Başlangıç -->
+    <section id="arakisim2" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-3">
+                          <h2 type="color" id="matematikselsekiller">Matematiksel İşlemler</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- Ara Kısım2 Bitiş -->
+
+  <!-- Faktöriyel Hesaplama Başlangıç-->
+  <section class="islemsection" id="matematik">
+    <h3 class="islembaslık">Faktöriyel</h3>
+  <div class="container" id="islemdiv">
+      <div class="formanadiv row">
+      <div class="formdiv col-lg-6">
+          <input id="faktöriyelsayi" class="inputlar" type="text" name="">
+          <label for="faktöriyelsayi" class="label">Sayı</label>
+      </div>
+    <div class="formdiv col-lg-4 mx-auto">
+        <input class="submit" id="faktöriyelsonuc"type="submit" value="Sonuç" name="">
+    </div>
+    <div class="sonucdiv col-lg-12 mx-auto text-center" id="faktöriyelcevap"></div>
+</div>
+  </div>
+</section>
+  <!-- Faktöriyel Hesaplama Bitiş-->
+
+  <!-- Ebob Ekok Hesaplama Başlangıç-->
+  <section class="islemsection">
+    <h3 class="islembaslık">EBOB EKOK</h3>
+  <div class="container" id="islemdiv">
+      <div class="formanadiv row">
+      <div class="formdiv col-lg-6">
+          <input id="ebobekoksayı1" class="inputlar" type="text" name="">
+          <label for="ebobekoksayı1" class="label">1. Sayı</label>
+      </div>
+      <div class="formdiv col-lg-6">
+        <input id="ebobekoksayı2" class="inputlar" type="text" name="">
+        <label for="ebobekoksayı2" class="label">2. Sayı</label>
+    </div>
+    <div class="formdiv col-lg-4 mx-auto">
+        <input class="submit" id="ebobekoksonuc"type="submit" value="Sonuç" name="">
+    </div>
+    <div class="sonucdiv col-lg-12 mx-auto text-center" id="ebobcevap"></div>
+    <div class="sonucdiv col-lg-12 mx-auto text-center" id="ekokcevap"></div>
+</div>
+  </div>
+</section>
+  <!-- Ebob Ekok Hesaplama Bitiş-->
+
+  <!-- Karekök Hesaplama Başlangıç-->
+  <section class="islemsection">
+    <h3 class="islembaslık">Karekök</h3>
+  <div class="container" id="islemdiv">
+      <div class="formanadiv row">
+      <div class="formdiv col-lg-6">
+          <input id="karekoksayı" class="inputlar" type="text" name="">
+          <label for="karekoksayı" class="label">Sayı</label>
+      </div>
+    <div class="formdiv col-lg-4 mx-auto">
+        <input class="submit" id="karekoksonuc"type="submit" value="Sonuç" name="">
+    </div>
+    <div class="sonucdiv col-lg-12 mx-auto text-center" id="karekokcevap"></div>
+</div>
+  </div>
+</section>
+  <!-- Karekök Hesaplama Bitiş-->
+
+  <!-- Karekök Hesaplama Başlangıç-->
+  <section class="islemsection">
+    <h3 class="islembaslık">Öklit Uzaklığı</h3>
+  <div class="container" id="islemdiv">
+      <div class="formanadiv row">
+      <div class="formdiv col-lg-6">
+          <input id="anoktasıx" class="inputlar" type="text" name="">
+          <label for="anoktasıx" class="label">A Noktası X1</label>
+      </div>
+      <div class="formdiv col-lg-6">
+        <input id="anoktasıy" class="inputlar" type="text" name="">
+        <label for="anoktasıy" class="label">A Noktası Y1</label>
+    </div>
+      <div class="formdiv col-lg-6">
+        <input id="bnoktasıx" class="inputlar" type="text" name="">
+        <label for="bnoktasıx" class="label">B Noktası X2</label>
+    </div>
+    <div class="formdiv col-lg-6">
+      <input id="bnoktasıy" class="inputlar" type="text" name="">
+      <label for="bnoktasıy" class="label">B Noktası Y2</label>
+  </div>
+    <div class="formdiv col-lg-4 mx-auto">
+        <input class="submit" id="uzaklıksonuc"type="submit" value="Sonuç" name="">
+    </div>
+    <div class="sonucdiv col-lg-12 mx-auto text-center" id="uzaklıkcevap"></div>
+</div>
+  </div>
+</section>
+  <!-- Karekök Hesaplama Bitiş-->
+
+
+  
+
+  <!-- Footer Başlangıç -->
+   <footer id="iletisim" class="bg-dark p-2 text-center">
+        <div class="container" id="sosyalmedyadiv">
+            <p id="sosyalmedyalogolarp" class="social">
+                <a href="https://twitter.com/xiclalw"><i id="sosyalmedyalogo" class="bi bi-twitter text-light mx-1"></i></a>
+                <a href="https://www.instagram.com/iclaal_s/"><i id="sosyalmedyalogo" class="bi bi-instagram text-light mx-1"></i></a>
+                <a href="https://www.linkedin.com/in/iclal-selvi-40583b225/"><i id="sosyalmeddivyalogo" class="bi bi-linkedin text-light mx-1"></i></a>
+                <a href="https://www.facebook.com/lauravtar/"><i id="sosyalmedyalogo" class="bi bi-facebook text-light mx-1"></i></a>
+                <p id="adresmail">iclal.selvi@std.medipol.edu.tr</p>
+                <p id="adresmail">iclalselvi26@gmail.com</p>
+                <div class="ms-auto">
+              </div>
+            </p>
+        </div>  
+        <button class="button" id="index2renk" style="vertical-align:middle"><span id="index2renkspan">Tema <i class="bi bi-arrow-left-short"></i><span></button>
+
+   </footer>
+  <!-- Footer Bitiş -->
+  <script src="index2java.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="jquery-3.6.0.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
